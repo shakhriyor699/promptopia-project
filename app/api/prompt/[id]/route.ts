@@ -24,7 +24,7 @@ export const GET = async (req: NextApiRequest, { params }: { params: { id: strin
 }
 
 
-export const PATCH = async (req: NextApiRequest, { params }: { params: { id: string } }) => {
+export const PATCH = async (req: any, { params }: { params: { id: string } }) => {
   const { prompt, tag } = await req.json();
 
   try {
