@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect, FC } from 'react'
 import { signIn, signOut, useSession, getProviders, LiteralUnion, ClientSafeProvider } from 'next-auth/react'
+// @ts-ignore
 import { BuiltInProviderType } from "next-auth/providers";
 
 const Nav: FC = () => {
