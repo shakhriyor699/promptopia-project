@@ -3,7 +3,7 @@ import Prompt from '@/models/prompt';
 import { NextApiRequest } from 'next/types';
 
 
-export const GET = async (req: NextApiRequest, { params }: { params: { id: string } }) => {
+export const GET = async (req: any, { params }: { params: { id: string } }) => {
 
   try {
     await connect()
@@ -52,7 +52,7 @@ export const PATCH = async (req: any, { params }: { params: { id: string } }) =>
   }
 }
 
-export const DELETE = async (req: NextApiRequest, { params }: { params: { id: string } }) => {
+export const DELETE = async (req: any, { params }: { params: { id: string } }) => {
 
 
   try {
