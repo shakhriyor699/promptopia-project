@@ -3,7 +3,7 @@ import Prompt from '@/models/prompt';
 import { NextApiRequest } from 'next/types';
 
 
-export const GET = async (req: NextApiRequest, { params }: { params: { id: string } }) => {
+export const GET = async ( { params }: { params: { id: string } }) => {
 
   try {
     await connect()
